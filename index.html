@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="sidebar-noneoverflow">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>COVID19 Dashboard | NIgeria </title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
     <script src="assets/js/loader.js"></script>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
@@ -19,17 +20,28 @@
     <link href="assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
     <style>
-        #time-bay{
+        #time-bay {
             padding-right: 1em;
+        }
+
+        #Container iframe,
+        #Container2 iframe {
+            min-height: 800px;
+            /* min-width: 1330px; */
         }
     </style>
 
 </head>
+
 <body class="alt-menu sidebar-noneoverflow">
     <!-- BEGIN LOADER -->
-    <div id="load_screen"> <div class="loader"> <div class="loader-content">
-        <div class="spinner-grow align-self-center"></div>
-    </div></div></div>
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
     <!--  END LOADER -->
 
     <!--  BEGIN NAVBAR  -->
@@ -47,7 +59,7 @@
                 </li>
             </ul>
 
-            
+
 
         </header>
     </div>
@@ -56,7 +68,11 @@
     <!--  BEGIN NAVBAR  -->
     <div class="sub-header-container">
         <header class="header navbar navbar-expand-sm">
-            <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></a>
+            <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg></a>
 
             <ul class="navbar-nav flex-row">
                 <li>
@@ -65,14 +81,15 @@
                         <nav class="breadcrumb-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><span>COVID19 Cases in Nigerian States</span></li>
+                                <li class="breadcrumb-item active" aria-current="page"><span>COVID19 Cases in Nigerian
+                                        States</span></li>
                             </ol>
                         </nav>
 
                     </div>
                 </li>
             </ul>
-            
+
             <ul class="navbar-nav flex-row ml-auto ">
                 <li class="nav-item more-dropdown">
                     <div id="time-bay"></div>
@@ -89,9 +106,9 @@
         <div class="search-overlay"></div>
 
         <!--  BEGIN SIDEBAR  -->
-      
+
         <!--  END SIDEBAR  -->
-        
+
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
             <div class="layout-px-spacing">
@@ -103,44 +120,45 @@
                             <div class="widget-heading">
                                 <h5 class="">COVID 19 Information Dashboard - Nigeria</h5>
                                 <ul class="tabs tab-pills">
-                                    <li><a href="javascript:void(0);" id="tb_1" class="tabmenu"></a></li>
+                                    <li><a href="javascript:void(0);" id="tb_1" class="tabmenu"> Refresh </a></li>
                                 </ul>
                             </div>
 
                             <div class="widget-content">
-                                	<div id="Container"
-									 style=" position:relative; display:block; width: 100%">
-										<iframe width="1440px" height="850px" src="https://app.powerbi.com/view?r=eyJrIjoiMDg2MTcwMTMtOWIzMi00N2JjLWFkNWEtZWEwNTcwMjliOTc1IiwidCI6ImY2ZjcwZjFiLTJhMmQtNGYzMC04NTJhLTY0YjhjZTBjMTlkNyIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
-									</div>
+                                <div id="Container" class="report-container" style=" position:relative; display:block;">
+                                    <!-- <iframe id="frame1" width="1440px" height="850px" src="https://app.powerbi.com/view?r=eyJrIjoiMDg2MTcwMTMtOWIzMi00N2JjLWFkNWEtZWEwNTcwMjliOTc1IiwidCI6ImY2ZjcwZjFiLTJhMmQtNGYzMC04NTJhLTY0YjhjZTBjMTlkNyIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe> -->
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    
-					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
                         <div class="widget widget-chart-one">
                             <div class="widget-heading">
                                 <h5 class="">COVID 19 Information Dashboard - Nigeria</h5>
                                 <ul class="tabs tab-pills">
-                                    <li><a href="javascript:void(0);" id="tb_1" class="tabmenu"></a></li>
+                                    <li><a href="javascript:void(0);" id="tb_2" class="tabmenu"> Refresh </a></li>
                                 </ul>
                             </div>
 
                             <div class="widget-content">
-                                	<div id="Container"
-									 style=" position:relative; display:block; width: 100%">
-                                     <iframe width="1440" height="850" src="https://app.powerbi.com/view?r=eyJrIjoiY2QxNDkwZDQtNWVmNS00MWQwLTg5ODItNjE4MmZlNjM2YTNmIiwidCI6ImY2ZjcwZjFiLTJhMmQtNGYzMC04NTJhLTY0YjhjZTBjMTlkNyIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
-									</div>
+                                <div id="Container2" class="report-container" style=" position:relative; display:block; width: 100%">
+                                    <!-- <iframe id="frame2" width="1440" height="850" src="https://app.powerbi.com/view?r=eyJrIjoiY2QxNDkwZDQtNWVmNS00MWQwLTg5ODItNjE4MmZlNjM2YTNmIiwidCI6ImY2ZjcwZjFiLTJhMmQtNGYzMC04NTJhLTY0YjhjZTBjMTlkNyIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe> -->
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing" id="reportContainer">
+                </div>
 
             </div>
             <div class="footer-wrapper">
                 <div class="footer-section f-section-1">
-                    <p class="">Copyright © 2020 <a target="_blank" href="https://immap.org">iMMAP</a>, All rights reserved.</p>
+                    <p class="">Copyright © 2020 <a target="_blank" href="https://immap.org">iMMAP</a>, All rights
+                        reserved.</p>
                 </div>
                 <!-- <div class="footer-section f-section-2">
                     <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></p>
@@ -153,16 +171,24 @@
     <!-- END MAIN CONTAINER -->
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="assets/js/adal.min.js"></script>
     <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script>
-        document.getElementById("time-bay").innerHTML = new Date().toLocaleString('en-UK', {timeZone: 'Africa/Lagos'});
+        document.getElementById("time-bay").innerHTML = new Date().toLocaleString('en-UK', {
+            timeZone: 'Africa/Lagos'
+        });
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        console.log(isMobile);
+        //================= Microsoft Auth ======================
+
         $(document).ready(function() {
+
             App.init();
-            
+
         });
     </script>
     <script src="assets/js/custom.js"></script>
@@ -172,7 +198,65 @@
     <script src="plugins/apex/apexcharts.min.js"></script>
     <script src="assets/js/dashboard/dash_1.js"></script>
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-	<script src="assets/js/power-bi/powerbi.min.js"></script>
+    <script src="assets/js/power-bi/powerbi.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var models = window['powerbi-client'].models;
+            var report = undefined
+            var reportIds = ['be8b0f2e-6f71-415b-9834-f0d067c3bc75', '744c070f-5c0d-424a-bc5b-403c605cdfb6'];
+            var embedConfiguration = {
+                type: 'report',
+                id: '',
+                embedUrl: 'https://app.powerbi.com/reportEmbed',
+                tokenType: models.TokenType.Aad,
+                accessToken: '',
+                pageView: "fitToWidth",
+                settings: {
+                    navContentPaneEnabled: false,
+                    layoutType: isMobile ? models.LayoutType.MobilePortrait : models.LayoutType.Master 
+                }
+            };
+
+
+
+            $.ajax({
+                url: "https://azure-auth.troclip.com/token",
+                dataType: 'json',
+                success: function(result) {
+                    var token = result.data;
+                    embedConfiguration.accessToken = token;
+
+                    var config1 = Object.assign({}, embedConfiguration);
+                    var config2 = Object.assign({}, embedConfiguration);
+                    config1.id = reportIds[0];
+                    config2.id = reportIds[1];
+                    
+                    var $reportContainer1 = $('#Container');
+                    var $reportContainer2 = $('#Container2');
+
+                    report1 = powerbi.embed($reportContainer1.get(0), config1);
+                    report2 = powerbi.embed($reportContainer2.get(0), config2);
+
+                    window.onresize = function(event) {
+                        var calcWidth = 0.942 * screen.width;
+                        var calcHeight = 0.55666113875 * calcWidth;
+                        $('.report-container iframe').css('width', calcWidth);
+                        $('.report-container iframe').css('height', calcHeight);
+                        console.log(screen.width, screen.height, calcWidth, calcHeight, report);
+                    };
+
+                    $('#tb_1').click(function(){
+                        report1.refresh();
+                    });
+                    $('#tb_2').click(function(){
+                        report2.refresh();
+                    });
+                }
+            });
+
+        });
+    </script>
 
 </body>
+
 </html>
