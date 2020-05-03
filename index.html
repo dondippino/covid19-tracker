@@ -68,7 +68,10 @@
     <!--  BEGIN NAVBAR  -->
     <div class="sub-header-container">
         <header class="header navbar navbar-expand-sm">
-            <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+            <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -120,7 +123,45 @@
                             <div class="widget-heading">
                                 <h5 class="">COVID 19 Information Dashboard - Nigeria</h5>
                                 <ul class="tabs tab-pills">
-                                    <li><a href="javascript:void(0);" id="tb_1" class="tabmenu"> Refresh </a></li>
+                                    <li>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button id="tb_1" type="button"
+                                                class="btn btn-outline-primary btn-secondary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-refresh-cw">
+                                                    <polyline points="23 4 23 10 17 10"></polyline>
+                                                    <polyline points="1 20 1 14 7 14"></polyline>
+                                                    <path
+                                                        d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15">
+                                                    </path>
+                                                </svg></button>
+                                            <button id="print_1" type="button"
+                                                class="btn btn-outline-primary btn-secondary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-printer">
+                                                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                                                    <path
+                                                        d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2">
+                                                    </path>
+                                                    <rect x="6" y="14" width="12" height="8"></rect>
+                                                </svg></button>
+                                            <button id="fullscreen_1" id="print_1" type="button"
+                                                class="btn btn-outline-primary btn-secondary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-maximize">
+                                                    <path
+                                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                                    </path>
+                                                </svg></button>
+                                        </div>
+                                    </li>
+                                    <!-- <li><a href="javascript:void(0);" id="tb_1" class="tabmenu"> Refresh </a></li> -->
                                 </ul>
                             </div>
 
@@ -138,12 +179,51 @@
                             <div class="widget-heading">
                                 <h5 class="">COVID 19 Information Dashboard - Nigeria</h5>
                                 <ul class="tabs tab-pills">
-                                    <li><a href="javascript:void(0);" id="tb_2" class="tabmenu"> Refresh </a></li>
+                                    <li>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button id="tb_2" type="button"
+                                                class="btn btn-outline-primary btn-secondary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-refresh-cw">
+                                                    <polyline points="23 4 23 10 17 10"></polyline>
+                                                    <polyline points="1 20 1 14 7 14"></polyline>
+                                                    <path
+                                                        d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15">
+                                                    </path>
+                                                </svg></button>
+                                            <button id="print_2" type="button"
+                                                class="btn btn-outline-primary btn-secondary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-printer">
+                                                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                                                    <path
+                                                        d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2">
+                                                    </path>
+                                                    <rect x="6" y="14" width="12" height="8"></rect>
+                                                </svg></button>
+                                            <button id="fullscreen_2" type="button"
+                                                class="btn btn-outline-primary btn-secondary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-maximize">
+                                                    <path
+                                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                                    </path>
+                                                </svg></button>
+                                        </div>
+                                    </li>
+                                    <!-- <li><a href="javascript:void(0);" id="tb_2" class="tabmenu"> Refresh </a></li> -->
                                 </ul>
                             </div>
 
                             <div class="widget-content">
-                                <div id="Container2" class="report-container" style=" position:relative; display:block; width: 100%">
+                                <div id="Container2" class="report-container"
+                                    style=" position:relative; display:block; width: 100%">
                                     <!-- <iframe id="frame2" width="1440" height="850" src="https://app.powerbi.com/view?r=eyJrIjoiY2QxNDkwZDQtNWVmNS00MWQwLTg5ODItNjE4MmZlNjM2YTNmIiwidCI6ImY2ZjcwZjFiLTJhMmQtNGYzMC04NTJhLTY0YjhjZTBjMTlkNyIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe> -->
                                 </div>
                             </div>
@@ -185,7 +265,7 @@
         console.log(isMobile);
         //================= Microsoft Auth ======================
 
-        $(document).ready(function() {
+        $(document).ready(function () {
 
             App.init();
 
@@ -200,7 +280,7 @@
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
     <script src="assets/js/power-bi/powerbi.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             var models = window['powerbi-client'].models;
             var report = undefined
             var reportIds = ['be8b0f2e-6f71-415b-9834-f0d067c3bc75', '744c070f-5c0d-424a-bc5b-403c605cdfb6'];
@@ -213,7 +293,7 @@
                 pageView: "fitToWidth",
                 settings: {
                     navContentPaneEnabled: false,
-                    layoutType: isMobile ? models.LayoutType.MobilePortrait : models.LayoutType.Master 
+                    layoutType: isMobile ? models.LayoutType.MobilePortrait : models.LayoutType.Master
                 }
             };
 
@@ -222,7 +302,7 @@
             $.ajax({
                 url: "https://azure-auth.troclip.com/token",
                 dataType: 'json',
-                success: function(result) {
+                success: function (result) {
                     var token = result.data;
                     embedConfiguration.accessToken = token;
 
@@ -230,14 +310,14 @@
                     var config2 = Object.assign({}, embedConfiguration);
                     config1.id = reportIds[0];
                     config2.id = reportIds[1];
-                    
+
                     var $reportContainer1 = $('#Container');
                     var $reportContainer2 = $('#Container2');
 
                     report1 = powerbi.embed($reportContainer1.get(0), config1);
                     report2 = powerbi.embed($reportContainer2.get(0), config2);
 
-                    window.onresize = function(event) {
+                    window.onresize = function (event) {
                         var calcWidth = 0.942 * screen.width;
                         var calcHeight = 0.55666113875 * calcWidth;
                         $('.report-container iframe').css('width', calcWidth);
@@ -245,11 +325,23 @@
                         console.log(screen.width, screen.height, calcWidth, calcHeight, report);
                     };
 
-                    $('#tb_1').click(function(){
+                    $('#tb_1').click(function () {
                         report1.refresh();
                     });
-                    $('#tb_2').click(function(){
+                    $('#tb_2').click(function () {
                         report2.refresh();
+                    });
+                    $('#print_1').click(function () {
+                        report1.print();
+                    });
+                    $('#print_2').click(function () {
+                        report2.print();
+                    });
+                    $('#fullscreen_1').click(function () {
+                        report1.fullscreen();
+                    });
+                    $('#fullscreen_2').click(function () {
+                        report2.fullscreen();
                     });
                 }
             });
